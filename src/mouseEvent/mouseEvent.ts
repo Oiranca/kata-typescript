@@ -1,5 +1,6 @@
 import {MouseEventListener} from './mouseEventListener';
 import {MousePointerCoordinates} from './MousePointerCoordinates';
+import {MouseEventType} from './mouseEventType';
 
 
 export class Mouse {
