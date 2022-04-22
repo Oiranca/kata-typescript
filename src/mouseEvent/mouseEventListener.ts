@@ -1,5 +1,5 @@
-import {MouseEventType} from './mouseEvent';
+import {MouseEventType} from './mouseEventType';
 
-export interface MouseEventListener {
-  handleMouseEvent(type: MouseEventType): void;
+export class MouseEventListener {
+  public handleMouseEvent(type: MouseEventType): void { }
 }
