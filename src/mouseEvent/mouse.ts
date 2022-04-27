@@ -7,21 +7,15 @@ export class Mouse {
   private listeners: MouseEventListener[] = [];
   private readonly timeWindowInMillisecondsForDoubleClick = 500;
 
-  public pressLeftButton(currentTimeInMilliseconds: number) {
-    currentTimeInMilliseconds;
-    this.timeWindowInMillisecondsForDoubleClick;
+  public pressLeftButton(_currentTimeInMilliseconds: number) {
   }
 
-  public releaseLeftButton(currentTimeInMilliseconds: number) {
-    currentTimeInMilliseconds;
+  public releaseLeftButton(_currentTimeInMilliseconds: number) {
+    this.notifySubscribers(MouseEventType.SingleClick);
   }
 
-  public move(from: MousePointerCoordinates, to: MousePointerCoordinates,
-    currentTimeInMilliseconds: number) {
-    from;
-    to;
-    currentTimeInMilliseconds;
-    this.notifySubscribers;
+  public move(_from: MousePointerCoordinates, _to: MousePointerCoordinates,
+    _currentTimeInMilliseconds: number) {
   }
 
   public subscribe(listener: MouseEventListener) {
